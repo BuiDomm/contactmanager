@@ -23,9 +23,9 @@ public class ContactRespository implements InterFaceContact {
     @Override
     public void displayAll(ArrayList<Contact> list) {
         System.out.println("===================== List all the contacts ===================");
-        System.out.printf("%-5s|%-20s|%-15s|%-15s|%-15s|%-10s|%-10s\n", "ID", "Name", "First Name", "Last Name", "Group", "Address", "Phone");
+        System.out.printf("%-5s|%-20s|%-15s|%-15s|%-15s|%-15s|%-15s\n", "ID", "Name", "First Name", "Last Name", "Group", "Address", "Phone");
         for (Contact c : list) {
-            System.out.printf("%-5d%-20s%-15s%-15s%-15s%-10s%-10s\n", c.getId(), c.getFullname(), c.getFirstName(), c.getLastName(), c.getGroup(), c.getAddress(), c.getPhone());
+            System.out.printf("%-6d%-21s%-16s%-16s%-16s%-16s%-16s\n", c.getId(), c.getFullname(), c.getFirstName(), c.getLastName(), c.getGroup(), c.getAddress(), c.getPhone());
         }
         System.out.println("==========================================================");
         System.out.println("");

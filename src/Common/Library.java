@@ -86,6 +86,7 @@ public class Library {
         while (true) {
             String input = getValue(msg);
             if (input == null || input.length() != 10) {
+                System.out.println("Number phone must be 10 digits.");
                 continue;
             }
             if (input.charAt(0) != '1') {
